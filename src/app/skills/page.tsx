@@ -140,7 +140,7 @@ export default function Skills() {
       <section className="pb-20 relative z-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {Object.entries(skills).map(([category, skillList], index) => (
+            {Object.entries(skills).map(([category, skillList]) => (
               <div
                 key={category}
                 className={`glass-card-enhanced bg-gradient-to-br ${getCategoryColor(category)} border rounded-2xl p-6 hover:transform hover:scale-105 transition-all duration-300`}
@@ -202,7 +202,7 @@ export default function Skills() {
             <div className="text-center">
               <h2 className="text-2xl font-bold text-white mb-4">Continuous Learning</h2>
               <p className="text-blue-100 max-w-3xl mx-auto leading-relaxed">
-                As a fast learner with a passion for technology, I'm constantly exploring new frameworks, 
+                As a fast learner with a passion for technology, I&apos;m constantly exploring new frameworks, 
                 tools, and methodologies. I believe in staying current with industry trends and 
                 continuously expanding my skill set to tackle new challenges and opportunities.
               </p>

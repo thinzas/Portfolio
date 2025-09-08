@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { ChevronDown, Github, Linkedin, Mail, Download, Code, Briefcase, GraduationCap } from 'lucide-react';
+import { ChevronDown, Github, Linkedin, Mail, Code, Briefcase, GraduationCap } from 'lucide-react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 
@@ -34,7 +34,7 @@ export default function Home() {
             </p>
             
             <p className="text-lg text-gray-700 max-w-3xl mx-auto mb-12 leading-relaxed">
-              I'm a computer science undergraduate with a strong interest in problem-solving and full-stack 
+              I&apos;m a computer science undergraduate with a strong interest in problem-solving and full-stack 
               development using technologies like React, Node.js and Django. As a fast learner, I enjoy exploring new 
               technologies and challenging myself to pick up new skills as I build.
             </p>

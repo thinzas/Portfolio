@@ -70,8 +70,8 @@ export default function Contact() {
               Get In Touch
             </h1>
             <p className="text-xl text-blue-100 max-w-3xl mx-auto">
-              I'm always interested in new opportunities, collaborations, and conversations. 
-              Let's connect and explore how we can work together!
+              I&apos;m always interested in new opportunities, collaborations, and conversations. 
+              Let&apos;s connect and explore how we can work together!
             </p>
           </div>
         </div>
@@ -164,7 +164,7 @@ export default function Contact() {
                   <span className="font-semibold text-white">Available for internships and collaborations</span>
                 </div>
                 <p className="text-green-100">
-                  I'm actively seeking software engineering internship opportunities and 
+                  I&apos;m actively seeking software engineering internship opportunities and 
                   am open to freelance projects and collaborations.
                 </p>
               </div>
@@ -179,7 +179,7 @@ export default function Contact() {
                   <CheckCircle className="text-green-400 mx-auto mb-4" size={48} />
                   <h3 className="text-xl font-semibold text-white mb-2">Message Sent!</h3>
                   <p className="text-gray-300 mb-6">
-                    Thank you for your message. I'll get back to you as soon as possible.
+                    Thank you for your message. I&apos;ll get back to you as soon as possible.
                   </p>
                   <button
                     onClick={() => setSuccess(false)}
@@ -279,10 +279,10 @@ export default function Contact() {
           {/* Call to Action */}
           <div className="mt-16 text-center">
             <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-xl p-8 text-white">
-              <h2 className="text-2xl font-bold mb-4">Let's Build Something Amazing Together</h2>
+              <h2 className="text-2xl font-bold mb-4">Let&apos;s Build Something Amazing Together</h2>
               <p className="text-blue-100 mb-6 max-w-2xl mx-auto">
                 Whether you have a project in mind, an internship opportunity, or just want to connect, 
-                I'd love to hear from you. Let's turn ideas into reality!
+                I&apos;d love to hear from you. Let&apos;s turn ideas into reality!
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a

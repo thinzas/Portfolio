@@ -65,12 +65,12 @@ export default function About() {
                 </div>
                 <div className="space-y-4 text-blue-100 leading-relaxed">
                   <p>
-                    I'm a computer science undergraduate with a strong interest in problem-solving and full-stack 
+                    I&apos;m a computer science undergraduate with a strong interest in problem-solving and full-stack 
                     development using technologies like React, Node.js and Django. As a fast learner, I enjoy exploring new 
                     technologies and challenging myself to pick up new skills as I build.
                   </p>
                   <p>
-                    I'm eager to take on a software engineering internship where I can sharpen my skills, gain real-world 
+                    I&apos;m eager to take on a software engineering internship where I can sharpen my skills, gain real-world 
                     experience, and contribute with energy and fresh ideas. My goal is to become a well-rounded software 
                     engineer who can tackle complex problems and create meaningful solutions.
                   </p>
@@ -139,7 +139,7 @@ export default function About() {
                         <span className="text-emerald-300 font-semibold">Z-score: 1.833</span>
                       </p>
                       <p className="text-blue-100">
-                        <span className="font-semibold">G.C.E. Ordinary Level (2017):</span> 9 A's
+                        <span className="font-semibold">G.C.E. Ordinary Level (2017):</span> 9 A&apos;s
                       </p>
                     </div>
                   </div>

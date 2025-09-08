@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { Github, ExternalLink, Calendar, Users, User } from 'lucide-react';
+import { Github, Calendar, Users, User } from 'lucide-react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 
@@ -262,7 +262,7 @@ export default function Projects() {
             <div className="glass-card-enhanced rounded-2xl p-8 text-white">
               <h2 className="text-2xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">Interested in Collaborating?</h2>
               <p className="text-blue-100 mb-6">
-                I'm always open to working on new and exciting projects. Let's create something amazing together!
+                I&apos;m always open to working on new and exciting projects. Let&apos;s create something amazing together!
               </p>
               <a
                 href="/contact"
