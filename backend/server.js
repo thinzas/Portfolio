@@ -13,7 +13,7 @@ const PORT = process.env.PORT || 5000;
 // Security-enhanced CORS configuration
 const corsOptions = {
     origin: process.env.NODE_ENV === 'production'
-        ? ['https://your-portfolio.vercel.app', 'https://www.your-domain.com'] // Replace with your actual domain
+        ? ['https://portfolio-thinza.vercel.app', 'https://www.your-domain.com'] // Updated with your actual domain
         : ['http://localhost:3000'],
     credentials: true,
     optionsSuccessStatus: 200
@@ -60,6 +60,9 @@ const createTransporter = () => {
 // CV download endpoint
 app.get('/api/download-cv', (req, res) => {
     const cvPath = path.join(__dirname, 'assets', 'Thihansa_Sanjunie_CV.pdf');
+    
+    console.log('CV download requested. File path:', cvPath);
+    console.log('File exists:', fs.existsSync(cvPath));
 
     // Check if CV file exists
     if (fs.existsSync(cvPath)) {
@@ -67,9 +70,12 @@ app.get('/api/download-cv', (req, res) => {
             if (err) {
                 console.error('Error downloading CV:', err);
                 res.status(500).json({ error: 'Error downloading CV' });
+            } else {
+                console.log('CV downloaded successfully');
             }
         });
     } else {
+        console.error('CV file not found at:', cvPath);
         res.status(404).json({ error: 'CV not found' });
     }
 });
