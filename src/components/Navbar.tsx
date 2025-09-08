@@ -19,7 +19,14 @@ const Navbar = () => {
   const handleDownloadCV = async () => {
     try {
       const apiUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000';
+      console.log('🔍 Debug Info:');
+      console.log('API URL:', apiUrl);
+      console.log('Full URL:', `${apiUrl}/api/download-cv`);
+      
       const response = await fetch(`${apiUrl}/api/download-cv`);
+      console.log('Response status:', response.status);
+      console.log('Response ok:', response.ok);
+      
       if (response.ok) {
         const blob = await response.blob();
         const url = window.URL.createObjectURL(blob);
@@ -31,10 +38,11 @@ const Navbar = () => {
         window.URL.revokeObjectURL(url);
         document.body.removeChild(a);
       } else {
+        console.error('❌ Download failed:', response.status, response.statusText);
         alert('CV not available for download at the moment.');
       }
     } catch (error) {
-      console.error('Error downloading CV:', error);
+      console.error('❌ Error downloading CV:', error);
       alert('Error downloading CV. Please try again later.');
     }
   };
