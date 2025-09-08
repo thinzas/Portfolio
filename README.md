@@ -1,5 +1,7 @@
 # Thihansa Sanjunie - Portfolio Website
 
+**Live Website:** [Visit Portfolio](https://portfolio-thinza.vercel.app)  
+
 A beautiful, responsive portfolio website built with Next.js and Node.js showcasing the work, projects, and skills of (me) Thihansa Sanjunie, a Computer Science undergraduate and aspiring Software Engineer.
 
 ## 🌟 Features
