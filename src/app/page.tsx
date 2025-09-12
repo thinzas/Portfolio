@@ -107,7 +107,7 @@ export default function Home() {
             
 <h1 className="text-4xl font-mono">
   <span className="text-blue-400"> &lt; </span>
-  Hi! I'm <span className="text-pink-400">Thihansa</span>
+  Hi! I&apos;m <span className="text-pink-400">Thihansa</span>
   <span className="text-blue-400"> /&gt; </span>
 </h1>
 
@@ -263,9 +263,11 @@ export default function Home() {
                   setSelectedImageIndex(-1); // Start with main image
                 }}>
                   {project.image && (
-                    <img 
+                    <Image 
                       src={project.image} 
                       alt={project.title}
+                      width={500}
+                      height={300}
                       className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                       onError={(e) => {
                         e.currentTarget.style.display = 'none';
