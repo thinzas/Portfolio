@@ -105,9 +105,12 @@ export default function Home() {
               </div>
             </div>
             
-            <h1 className="text-3xl md:text-5xl font-bold bg-gradient-to-r from-white via-blue-100 to-purple-100 bg-clip-text text-transparent mb-6 leading-tight">
-              Thihansa Sanjunie
-            </h1>
+<h1 className="text-4xl font-mono">
+  <span className="text-blue-400"> &lt; </span>
+  Hi! I'm <span className="text-pink-400">Thihansa</span>
+  <span className="text-blue-400"> /&gt; </span>
+</h1>
+
             
             <p className="text-xl md:text-2xl text-blue-100 mb-8 font-medium">
               CS Undergraduate | Aspiring Software Engineer

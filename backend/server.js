@@ -60,7 +60,7 @@ const createTransporter = () => {
 // CV download endpoint
 app.get('/api/download-cv', (req, res) => {
     const cvPath = path.join(__dirname, 'assets', 'Thihansa_Sanjunie_CV.pdf');
-    
+
     console.log('CV download requested. File path:', cvPath);
     console.log('File exists:', fs.existsSync(cvPath));
 
@@ -200,6 +200,25 @@ app.get('/api/projects', (req, res) => {
     const projects = [
         {
             id: 1,
+            title: "SmartCreateAI - AI Content Creation Platform",
+            description: "Created a comprehensive AI-driven platform that allows users to generate articles, blog titles, and images, as well as perform advanced image editing such as background and object removal. Features user authentication, community sharing, resume review tools, and seamless AI integration for enhanced productivity.",
+            technologies: ["React.js", "Node.js", "Express", "PostgreSQL", "Cloudinary", "Clerk Auth", "OpenAI API", "Gemini API", "Replicate API"],
+            year: "2025",
+            type: "Solo Project",
+            githubUrl: "https://github.com/thinzas/SmartCreateAI",
+            image: "/projects/smartcreateai/main.png",
+            images: ["/projects/smartcreateai/generate-image.png",
+                "/projects/smartcreateai/resume-review.png",
+                "/projects/smartcreateai/blog-title.png",
+                "/projects/smartcreateai/write-article.png",
+                "/projects/smartcreateai/remove-background.png",
+                "/projects/smartcreateai/remove-object.png",
+                "/projects/smartcreateai/dashboard.png",
+                "/projects/smartcreateai/community.png"
+            ]
+        },
+        {
+            id: 2,
             title: "MentorMe - Academic Project Management System",
             description: "Developed a group project management system tailored to the unique academic workflow at the University of Colombo School of Computing (UCSC). It offers features like task boards, meeting scheduling, progress tracking, feedback channels, and analytics — all tailored to academic needs.",
             technologies: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
@@ -214,7 +233,7 @@ app.get('/api/projects', (req, res) => {
             ]
         },
         {
-            id: 2,
+            id: 3,
             title: "UniRoute - University Guide System",
             description: "Developing a system that guides Sri Lankan students towards suitable higher education programs and career pathways based on their academic subjects, Z-scores, and personal aspirations. It provides personalized guidance, program details, and decision support tools.",
             technologies: ["React JS", "Django", "Python", "MySQL"],
@@ -226,7 +245,7 @@ app.get('/api/projects', (req, res) => {
             status: "ongoing"
         },
         {
-            id: 3,
+            id: 4,
             title: "Trendira - MERN Stack E-Commerce Platform",
             description: "Developed a web application that enables users to browse products, manage carts, and complete purchases in a dynamic shopping environment featuring support for both Stripe and Razorpay payment gateways for seamless transactions.",
             technologies: ["React JS", "MongoDB", "Express", "Node JS", "Stripe"],
